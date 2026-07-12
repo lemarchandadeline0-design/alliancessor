@@ -126,7 +126,7 @@ function Hero() {
               border: '6px solid #FFFDF9',
             }}
           >
-            <img src="/images/2.png" alt="Photo action de terrain" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+            <img src="/images/fieldwork-wetland.jpg" alt="Photo action de terrain" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
         </div>
       </div>
@@ -212,7 +212,7 @@ function MutualizedService() {
       <div className="servgrid" style={{ maxWidth: 1240, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr', gap: 48, alignItems: 'center' }}>
         <div style={{ position: 'relative' }}>
           <div style={{ position: 'relative', borderRadius: 28, overflow: 'hidden', aspectRatio: '4/3', boxShadow: '0 40px 70px -40px rgba(91,61,245,0.5)', border: '6px solid #FFFDF9' }}>
-            <img src="/images/29.png" alt="Photo équipe / accompagnement" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+            <img src="/images/hands-together.jpg" alt="Photo équipe / accompagnement" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <div
             style={{

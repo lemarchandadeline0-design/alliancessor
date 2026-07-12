@@ -436,9 +436,9 @@ function Hero({
               </div>
               <div style={{ position: 'relative', height: 120, borderRadius: 16, overflow: 'hidden' }}>
                 <img
-                  src="/images/28.png"
+                  src="/images/team-office-1.webp"
                   alt="Photo équipe entreprise"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
               </div>
             </div>
@@ -524,9 +524,9 @@ function Hero({
               </div>
               <div style={{ position: 'relative', height: 120, borderRadius: 16, overflow: 'hidden' }}>
                 <img
-                  src="/images/22.png"
+                  src="/images/hands-tree.jpg"
                   alt="Photo action associative"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
               </div>
             </div>
@@ -815,7 +815,7 @@ function EntreprisesSection() {
         <div className="assogrid" style={{ maxWidth: 1240, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr', gap: 48, alignItems: 'center' }}>
           <div style={{ position: 'relative' }}>
             <div style={{ position: 'relative', borderRadius: 28, overflow: 'hidden', aspectRatio: '4/3', boxShadow: '0 40px 70px -40px rgba(232,67,31,0.45)' }}>
-              <img src="/images/28.png" alt="Photo équipe entreprise" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+              <img src="/images/team-office-1.webp" alt="Photo équipe entreprise" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
             <div
               style={{
@@ -893,7 +893,7 @@ function AssociationsSection() {
       <div className="assogrid" style={{ maxWidth: 1240, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr', gap: 48, alignItems: 'center' }}>
         <div style={{ position: 'relative' }}>
           <div style={{ position: 'relative', borderRadius: 28, overflow: 'hidden', aspectRatio: '4/3', boxShadow: '0 40px 70px -40px rgba(91,61,245,0.5)' }}>
-            <img src="/images/4.png" alt="Photo terrain / association" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
+            <img src="/images/fieldwork-wetland.jpg" alt="Photo terrain / association" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <div
             style={{
