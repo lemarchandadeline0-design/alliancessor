@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  background: #faf4ec;
+  color: #1b1830;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #e8431f;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5b3df5;
+}
+
+::selection {
+  background: #ffc24b;
+  color: #1b1830;
+}
+
+button {
+  font: inherit;
+}
+
+/* ---- profile toggle ---- */
+.audience-toggle-btn {
+  transition: color 0.3s ease;
+}
+
+/* ---- CTA buttons: translateY(-2px) on hover ---- */
+.btn-lift {
+  transition: transform 0.15s ease, background 0.35s ease;
+}
+.btn-lift:hover {
+  transform: translateY(-2px);
+}
+
+/* ---- "Notre solution" cards ---- */
+.solcard {
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+  cursor: default;
+}
+.solcard:hover {
+  background: #1b1830 !important;
+  border-color: #1b1830 !important;
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px -28px rgba(27, 24, 48, 0.55);
+}
+.solcard:hover h3 {
+  color: #faf4ec !important;
+}
+.solcard:hover p {
+  color: rgba(250, 244, 236, 0.85) !important;
+}
+.solcard:hover .solnum {
+  color: #ffc24b !important;
+}
+
+/* ---- "Pourquoi vous joindre" cards ---- */
+.whycard-ent,
+.whycard-asso {
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+.whycard-ent:hover {
+  background: #ff5a36 !important;
+  border-color: #ff5a36 !important;
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px -28px rgba(232, 67, 31, 0.5);
+}
+.whycard-ent:hover h3,
+.whycard-ent:hover p {
+  color: #fffdf9 !important;
+}
+.whycard-asso:hover {
+  background: #5b3df5 !important;
+  border-color: #5b3df5 !important;
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px -28px rgba(91, 61, 245, 0.5);
+}
+.whycard-asso:hover h3,
+.whycard-asso:hover p {
+  color: #faf4ec !important;
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-22px) rotate(6deg);
+  }
+}
+@keyframes floaty2 {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(18px) rotate(-5deg);
+  }
+}
+
+@media (min-width: 900px) {
+  .navlinks {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .herogrid {
+    grid-template-columns: 1.05fr 0.95fr !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .statgrid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .assogrid {
+    grid-template-columns: 0.9fr 1.1fr !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .footgrid {
+    grid-template-columns: 1.1fr 2fr !important;
+  }
+}
