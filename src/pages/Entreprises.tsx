@@ -128,7 +128,7 @@ function Hero() {
               border: '6px solid #FFFDF9',
             }}
           >
-            <img src="/images/team-office-2.jpg" alt="Photo dirigeants / équipe RSE" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src="/images/hands-tree.jpg" alt="Photo dirigeants / équipe RSE" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
         </div>
 
@@ -316,7 +316,7 @@ function ScoringVisual() {
               Mission &amp; impact
             </div>
             <div style={{ position: 'relative', height: 150, borderRadius: 16, overflow: 'hidden', marginBottom: 16 }}>
-              <img src="/images/hands-tree.jpg" alt="Photo projet associatif" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src="/images/fieldwork-wetland.jpg" alt="Photo projet associatif" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
             <p style={{ fontSize: 15, lineHeight: 1.55, color: 'rgba(250,244,236,0.85)' }}>
               Un projet à fort ancrage environnemental et local, accompagné dans la mesure de son impact — parfaitement
