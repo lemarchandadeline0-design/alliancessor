@@ -97,10 +97,10 @@ function Nav() {
         <a href="#solution" style={{ color: '#1B1830' }}>
           Le concept
         </a>
-        <a href="/entreprises" style={{ color: '#1B1830' }}>
+        <a href="/entreprises/" style={{ color: '#1B1830' }}>
           Entreprises
         </a>
-        <a href="/associations" style={{ color: '#1B1830' }}>
+        <a href="/associations/" style={{ color: '#1B1830' }}>
           Associations
         </a>
         <a href="#agence" style={{ color: '#1B1830' }}>
@@ -108,7 +108,7 @@ function Nav() {
         </a>
       </div>
       <a
-        href="/rendez-vous"
+        href="/rendez-vous/"
         className="btn-lift"
         style={{
           display: 'inline-flex',
@@ -376,7 +376,7 @@ function Hero({
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14, marginTop: 34 }}>
             <a
-              href="/rendez-vous"
+              href="/rendez-vous/"
               className="btn-lift"
               style={{
                 display: 'inline-flex',
@@ -438,7 +438,7 @@ function Hero({
                 <img
                   src="/images/28.png"
                   alt="Photo équipe entreprise"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
                 />
               </div>
             </div>
@@ -526,7 +526,7 @@ function Hero({
                 <img
                   src="/images/22.png"
                   alt="Photo action associative"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
                 />
               </div>
             </div>
@@ -815,7 +815,7 @@ function EntreprisesSection() {
         <div className="assogrid" style={{ maxWidth: 1240, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr', gap: 48, alignItems: 'center' }}>
           <div style={{ position: 'relative' }}>
             <div style={{ position: 'relative', borderRadius: 28, overflow: 'hidden', aspectRatio: '4/3', boxShadow: '0 40px 70px -40px rgba(232,67,31,0.45)' }}>
-              <img src="/images/28.png" alt="Photo équipe entreprise" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              <img src="/images/28.png" alt="Photo équipe entreprise" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
             </div>
             <div
               style={{
@@ -861,7 +861,7 @@ function EntreprisesSection() {
               <Checklist bg="#FFE1D4" color="#E8431F" strong="Valoriser la démarche" rest="auprès de vos collaborateurs, clients et partenaires — avec les avantages fiscaux associés." />
             </div>
             <a
-              href="/entreprises"
+              href="/entreprises/"
               className="btn-lift"
               style={{
                 display: 'inline-flex',
@@ -893,7 +893,7 @@ function AssociationsSection() {
       <div className="assogrid" style={{ maxWidth: 1240, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr', gap: 48, alignItems: 'center' }}>
         <div style={{ position: 'relative' }}>
           <div style={{ position: 'relative', borderRadius: 28, overflow: 'hidden', aspectRatio: '4/3', boxShadow: '0 40px 70px -40px rgba(91,61,245,0.5)' }}>
-            <img src="/images/4.png" alt="Photo terrain / association" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src="/images/4.png" alt="Photo terrain / association" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
           </div>
           <div
             style={{
@@ -944,7 +944,7 @@ function AssociationsSection() {
             />
           </div>
           <a
-            href="/associations"
+            href="/associations/"
             className="btn-lift"
             style={{
               display: 'inline-flex',
@@ -1069,14 +1069,14 @@ function FinalCta() {
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 14, marginTop: 34 }}>
             <a
-              href="/rendez-vous"
+              href="/rendez-vous/"
               className="btn-lift"
               style={{ display: 'inline-flex', alignItems: 'center', gap: 9, background: '#1B1830', color: '#FAF4EC', fontWeight: 700, fontSize: 16, padding: '16px 32px', borderRadius: 100 }}
             >
               Prendre rendez-vous →
             </a>
             <a
-              href="/rendez-vous"
+              href="/rendez-vous/"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -1117,21 +1117,21 @@ function Footer() {
               { label: 'Accueil', href: '#top' },
               { label: 'Qui sommes-nous', href: '#agence' },
               { label: 'Notre solution', href: '#solution' },
-              { label: 'Système de marque', href: '/systeme-de-marque' },
+              { label: 'Système de marque', href: '/systeme-de-marque/' },
             ]}
           />
           <FooterColumn
             title="Espaces"
             links={[
-              { label: 'Espace entreprises', href: '/entreprises' },
-              { label: 'Espace association', href: '/associations' },
-              { label: 'Devenir partenaire', href: '/rendez-vous' },
+              { label: 'Espace entreprises', href: '/entreprises/' },
+              { label: 'Espace association', href: '/associations/' },
+              { label: 'Devenir partenaire', href: '/rendez-vous/' },
             ]}
           />
           <FooterColumn
             title="Informations"
             links={[
-              { label: 'Contact', href: '/rendez-vous' },
+              { label: 'Contact', href: '/rendez-vous/' },
               { label: 'Mentions légales', href: '#top' },
               { label: "Modalités d'inscription", href: '#top' },
             ]}
