@@ -9,14 +9,14 @@ export default function InnerFooter() {
           <p style={{ fontSize: 14.5, lineHeight: 1.6, color: 'rgba(250,244,236,0.6)', marginTop: 16, maxWidth: 300 }}>
             Le premier matching de co-mécénat durable entre entreprises &amp; associations engagées.
           </p>
-          <p style={{ fontSize: 13.5, color: 'rgba(250,244,236,0.5)', marginTop: 14 }}>alliancessor@gmail.com · Alliancessor.com</p>
+          <p style={{ fontSize: 13.5, color: 'rgba(250,244,236,0.5)', marginTop: 14 }}>Alliancessor.com</p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 28 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 28 }}>
           <FooterColumn
             title="L'agence"
             links={[
               { label: 'Accueil', href: '/' },
-              { label: 'Qui sommes-nous', href: '/#agence' },
+              { label: 'Contact', href: '/rendez-vous/' },
             ]}
           />
           <FooterColumn
@@ -24,13 +24,6 @@ export default function InnerFooter() {
             links={[
               { label: 'Espace entreprises', href: '/entreprises/' },
               { label: 'Espace association', href: '/associations/' },
-            ]}
-          />
-          <FooterColumn
-            title="Informations"
-            links={[
-              { label: 'Contact', href: '/rendez-vous/' },
-              { label: 'Mentions légales', href: '/' },
             ]}
           />
         </div>
