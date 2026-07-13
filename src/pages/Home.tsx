@@ -1107,17 +1107,17 @@ function Footer() {
         <div>
           <Logo blend="screen" essorColor="#FF7A5C" textColor="#FAF4EC" />
           <p style={{ fontSize: 14.5, lineHeight: 1.6, color: 'rgba(250,244,236,0.6)', marginTop: 16, maxWidth: 300 }}>
-            Activateurs d'engagement, catalyseurs de croissance durable entre entreprises & associations.
+            Le premier matching de co-mécénat durable entre entreprises & associations engagées.
           </p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 28 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 28 }}>
           <FooterColumn
             title="L'agence"
             links={[
               { label: 'Accueil', href: '#top' },
               { label: 'Qui sommes-nous', href: '#agence' },
               { label: 'Notre solution', href: '#solution' },
-              { label: 'Système de marque', href: '/systeme-de-marque/' },
+              { label: 'Contact', href: '/rendez-vous/' },
             ]}
           />
           <FooterColumn
@@ -1126,14 +1126,6 @@ function Footer() {
               { label: 'Espace entreprises', href: '/entreprises/' },
               { label: 'Espace association', href: '/associations/' },
               { label: 'Devenir partenaire', href: '/rendez-vous/' },
-            ]}
-          />
-          <FooterColumn
-            title="Informations"
-            links={[
-              { label: 'Contact', href: '/rendez-vous/' },
-              { label: 'Mentions légales', href: '#top' },
-              { label: "Modalités d'inscription", href: '#top' },
             ]}
           />
         </div>
