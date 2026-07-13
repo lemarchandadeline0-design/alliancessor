@@ -76,7 +76,7 @@ function Hero() {
               Transformez l'engagement RSE en <span style={{ color: '#E8431F' }}>impact collectif</span>.
             </h1>
             <p style={{ fontSize: 'clamp(17px,2vw,20px)', lineHeight: 1.55, maxWidth: 540, marginTop: 22, color: 'rgba(27,24,48,0.75)' }}>
-              Grâce à votre score RSE, identifiez les projets associatifs les plus alignés avec vos engagements — et
+              Grâce à votre score RSE, identifiez les projets associatifs les plus alignés avec vos engagements et
               financez-les collectivement avec d'autres entreprises engagées.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14, marginTop: 30 }}>
@@ -319,7 +319,7 @@ function ScoringVisual() {
               <img src="/images/fieldwork-wetland.jpg" alt="Photo projet associatif" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
             <p style={{ fontSize: 15, lineHeight: 1.55, color: 'rgba(250,244,236,0.85)' }}>
-              Un projet à fort ancrage environnemental et local, accompagné dans la mesure de son impact — parfaitement
+              Un projet à fort ancrage environnemental et local, accompagné dans la mesure de son impact parfaitement
               aligné avec vos priorités.
             </p>
           </div>

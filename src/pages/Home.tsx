@@ -362,7 +362,7 @@ function Hero({
           {isEnt && (
             <p style={{ fontSize: 'clamp(17px,2vw,20px)', lineHeight: 1.55, maxWidth: 540, color: 'rgba(27,24,48,0.78)' }}>
               Transformez vos engagements RSE en impact concret. Rejoignez d'autres entreprises engagées pour{' '}
-              <strong style={{ color: '#1B1830' }}>co-financer</strong> des projets associatifs alignés avec vos valeurs — et
+              <strong style={{ color: '#1B1830' }}>co-financer</strong> des projets associatifs alignés avec vos valeurs et
               bénéficiez des avantages fiscaux associés.
             </p>
           )}

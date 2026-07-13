@@ -348,7 +348,7 @@ function WhyUs() {
           </h2>
           <p style={{ fontSize: 'clamp(16px,1.9vw,18px)', lineHeight: 1.6, marginTop: 20, color: 'rgba(27,24,48,0.7)' }}>
             Nous ne sommes pas une simple équipe de commerciaux externalisés, mais des acteurs conscients des enjeux de
-            demain — dédiés à connecter ceux qui veulent agir avec ceux qui agissent déjà.
+            demain dédiés à connecter ceux qui veulent agir avec ceux qui agissent déjà.
           </p>
         </div>
         <div className="whygrid" style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 20, marginTop: 40 }}>
