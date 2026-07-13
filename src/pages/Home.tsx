@@ -858,7 +858,7 @@ function EntreprisesSection() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginTop: 28 }}>
               <Checklist bg="#FFE1D4" color="#E8431F" strong="Identifier les bons projets" rest="grâce au scoring de compatibilité RSE." />
               <Checklist bg="#FFE1D4" color="#E8431F" strong="Mutualiser le financement" rest="avec d'autres entreprises pour changer d'échelle." />
-              <Checklist bg="#FFE1D4" color="#E8431F" strong="Valoriser la démarche" rest="auprès de vos collaborateurs, clients et partenaires — avec les avantages fiscaux associés." />
+              <Checklist bg="#FFE1D4" color="#E8431F" strong="Valoriser la démarche" rest="auprès de vos collaborateurs, clients et partenaires avec les avantages fiscaux associés." />
             </div>
             <a
               href="/entreprises/"
