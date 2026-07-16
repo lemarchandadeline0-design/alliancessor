@@ -76,13 +76,14 @@ function Hero() {
               Vos référentiels RSE, moteur de vos <span style={{ color: '#E8431F' }}>décisions de mécénat.</span>
             </h1>
             <p style={{ fontSize: 'clamp(17px,2vw,20px)', lineHeight: 1.55, maxWidth: 540, marginTop: 22, color: 'rgba(27,24,48,0.75)' }}>
-              À partir de vos référentiels RSE, AlliancEssor priorise les projets associatifs les plus alignés avec
-              votre stratégie, mutualise leur financement avec d'autres entreprises engagées et accompagne la mesure
-              de leur impact.
+              À partir de vos référentiels RSE, AlliancEssor priorise les projets associatifs les plus alignés avec votre stratégie, mutualise leur financement
+              avec d'autres entreprises engagées et accompagne la mesure de leur impact.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14, marginTop: 30 }}>
               <a
-                href="/rendez-vous/"
+                href="https://zcal.co/alliancessor/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-lift"
                 style={{
                   display: 'inline-flex',
@@ -139,7 +140,17 @@ function Hero() {
           </div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12 }}>
             {['B Corp', 'EcoVadis', 'Lucie', 'Autres démarches RSE'].map((label) => (
-              <span key={label} style={{ background: '#FFFDF9', border: '1px solid rgba(27,24,48,0.12)', padding: '11px 22px', borderRadius: 100, fontWeight: 700, fontSize: 15 }}>
+              <span
+                key={label}
+                style={{
+                  background: '#FFFDF9',
+                  border: '1px solid rgba(27,24,48,0.12)',
+                  padding: '11px 22px',
+                  borderRadius: 100,
+                  fontWeight: 700,
+                  fontSize: 15,
+                }}
+              >
                 {label}
               </span>
             ))}
@@ -151,10 +162,15 @@ function Hero() {
 }
 
 const ENABLES = [
-  { bg: '#FFE1D4', dark: false, title: 'Prioriser les bons projets', text: 'Recevoir un portefeuille de projets classés par alignement avec vos référentiels RSE.' },
+  {
+    bg: '#FFE1D4',
+    dark: false,
+    title: 'Prioriser les bons projets',
+    text: 'Recevoir un portefeuille de projets classés par alignement avec vos référentiels RSE.',
+  },
   { bg: '#E7E0FF', dark: false, title: 'Mutualiser le financement', text: 'Réunir les capacités de financement de plusieurs entreprises engagées.' },
   { bg: '#FFF0CE', dark: false, title: "Mesurer l'impact", text: 'Piloter les résultats et alimenter vos prochaines décisions de mécénat.' },
-  { bg: '#FF5A36', dark: true, title: 'Valoriser la démarche', text: 'Rendre l\'engagement concret auprès de vos collaborateurs, clients et partenaires.' },
+  { bg: '#FF5A36', dark: true, title: 'Valoriser la démarche', text: "Rendre l'engagement concret auprès de vos collaborateurs, clients et partenaires." },
 ];
 
 function WhatItEnables() {
@@ -162,9 +178,7 @@ function WhatItEnables() {
     <section style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)', background: '#FFFDF9' }}>
       <div style={{ maxWidth: 1240, margin: '0 auto' }}>
         <div style={{ maxWidth: 680 }}>
-          <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#E8431F' }}>
-            Notre méthodologie
-          </span>
+          <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#E8431F' }}>Notre méthodologie</span>
           <h2
             style={{
               fontFamily: "'Bricolage Grotesque'",
@@ -214,16 +228,59 @@ function HowItWorks() {
     <section id="methode" style={{ padding: 'clamp(50px,7vw,90px) clamp(20px,5vw,64px)', background: '#F3EBE0', position: 'relative', overflow: 'hidden' }}>
       <div
         aria-hidden="true"
-        style={{ position: 'absolute', top: '50%', right: -40, transform: 'translateY(-50%)', width: 'min(420px,40vw)', height: 'min(420px,40vw)', pointerEvents: 'none', zIndex: 0 }}
+        style={{
+          position: 'absolute',
+          top: '50%',
+          right: -40,
+          transform: 'translateY(-50%)',
+          width: 'min(420px,40vw)',
+          height: 'min(420px,40vw)',
+          pointerEvents: 'none',
+          zIndex: 0,
+        }}
       >
-        <span style={{ position: 'absolute', left: 0, top: '12%', width: '64%', height: '64%', borderRadius: '50%', background: '#FF5A36', mixBlendMode: 'multiply', opacity: 0.16 }} />
-        <span style={{ position: 'absolute', right: 0, top: '12%', width: '64%', height: '64%', borderRadius: '50%', background: '#5B3DF5', mixBlendMode: 'multiply', opacity: 0.16 }} />
-        <span style={{ position: 'absolute', left: '18%', bottom: 0, width: '64%', height: '64%', borderRadius: '50%', background: '#FFC24B', mixBlendMode: 'multiply', opacity: 0.16 }} />
+        <span
+          style={{
+            position: 'absolute',
+            left: 0,
+            top: '12%',
+            width: '64%',
+            height: '64%',
+            borderRadius: '50%',
+            background: '#FF5A36',
+            mixBlendMode: 'multiply',
+            opacity: 0.16,
+          }}
+        />
+        <span
+          style={{
+            position: 'absolute',
+            right: 0,
+            top: '12%',
+            width: '64%',
+            height: '64%',
+            borderRadius: '50%',
+            background: '#5B3DF5',
+            mixBlendMode: 'multiply',
+            opacity: 0.16,
+          }}
+        />
+        <span
+          style={{
+            position: 'absolute',
+            left: '18%',
+            bottom: 0,
+            width: '64%',
+            height: '64%',
+            borderRadius: '50%',
+            background: '#FFC24B',
+            mixBlendMode: 'multiply',
+            opacity: 0.16,
+          }}
+        />
       </div>
       <div style={{ maxWidth: 1240, margin: '0 auto', position: 'relative', zIndex: 1 }}>
-        <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#E8431F' }}>
-          Comment ça fonctionne
-        </span>
+        <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#E8431F' }}>Comment ça fonctionne</span>
         <h2
           style={{
             fontFamily: "'Bricolage Grotesque'",
@@ -239,12 +296,15 @@ function HowItWorks() {
           Une lecture en quatre dimensions, pas un simple score.
         </h2>
         <p style={{ fontSize: 'clamp(16px,1.9vw,19px)', lineHeight: 1.6, maxWidth: 720, margin: '20px 0 0', color: 'rgba(27,24,48,0.78)' }}>
-          Pour transformer vos référentiels RSE en décisions, notre moteur évalue chaque projet selon quatre dimensions
-          bien plus parlantes pour un décideur qu'une simple lecture de scores&nbsp;:
+          Pour transformer vos référentiels RSE en décisions, notre moteur évalue chaque projet selon quatre dimensions bien plus parlantes pour un décideur
+          qu'une simple lecture de scores&nbsp;:
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 16, marginTop: 36 }}>
           {DIMENSIONS.map((dim) => (
-            <div key={dim.title} style={{ background: '#FFFDF9', border: '1px solid rgba(27,24,48,0.1)', borderRadius: 20, padding: 26, borderLeft: `3px solid ${dim.color}` }}>
+            <div
+              key={dim.title}
+              style={{ background: '#FFFDF9', border: '1px solid rgba(27,24,48,0.1)', borderRadius: 20, padding: 26, borderLeft: `3px solid ${dim.color}` }}
+            >
               <h3 style={{ fontFamily: "'Bricolage Grotesque'", fontWeight: 700, fontSize: 19, margin: '0 0 8px' }}>{dim.title}</h3>
               <p style={{ fontSize: 14.5, lineHeight: 1.5, color: 'rgba(27,24,48,0.68)' }}>{dim.text}</p>
             </div>
@@ -278,7 +338,15 @@ function ScoringVisual() {
           </h2>
         </div>
         <div className="matchgrid" style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 22, alignItems: 'center', marginTop: 46 }}>
-          <div style={{ background: '#FFFDF9', border: '1px solid rgba(27,24,48,0.1)', borderRadius: 26, padding: 30, boxShadow: '0 30px 60px -34px rgba(255,90,54,0.4)' }}>
+          <div
+            style={{
+              background: '#FFFDF9',
+              border: '1px solid rgba(27,24,48,0.1)',
+              borderRadius: 26,
+              padding: 30,
+              boxShadow: '0 30px 60px -34px rgba(255,90,54,0.4)',
+            }}
+          >
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
               <span style={{ width: 10, height: 10, borderRadius: '50%', background: '#FF5A36' }} />
               <span style={{ fontWeight: 700, fontSize: 14, color: '#E8431F' }}>ENTREPRISE ENGAGÉE #1</span>
@@ -311,8 +379,12 @@ function ScoringVisual() {
               }}
             >
               <span style={{ width: 20, height: 20, position: 'relative', display: 'inline-block' }}>
-                <span style={{ position: 'absolute', left: 0, top: 0, width: 14, height: 14, borderRadius: '50%', background: '#FF5A36', mixBlendMode: 'screen' }} />
-                <span style={{ position: 'absolute', right: 0, top: 0, width: 14, height: 14, borderRadius: '50%', background: '#5B3DF5', mixBlendMode: 'screen' }} />
+                <span
+                  style={{ position: 'absolute', left: 0, top: 0, width: 14, height: 14, borderRadius: '50%', background: '#FF5A36', mixBlendMode: 'screen' }}
+                />
+                <span
+                  style={{ position: 'absolute', right: 0, top: 0, width: 14, height: 14, borderRadius: '50%', background: '#5B3DF5', mixBlendMode: 'screen' }}
+                />
               </span>
               ANALYSE
             </div>
@@ -325,15 +397,16 @@ function ScoringVisual() {
               <span style={{ width: 10, height: 10, borderRadius: '50%', background: '#FFC24B' }} />
               <span style={{ fontWeight: 700, fontSize: 14, color: '#FFC24B' }}>PROJET ASSOCIATIF #1</span>
             </div>
-            <div style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(250,244,236,0.6)', marginBottom: 18 }}>
+            <div
+              style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(250,244,236,0.6)', marginBottom: 18 }}
+            >
               Mission &amp; impact
             </div>
             <div style={{ position: 'relative', height: 150, borderRadius: 16, overflow: 'hidden', marginBottom: 16 }}>
               <img src="/images/fieldwork-wetland.jpg" alt="Photo projet associatif" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
             <p style={{ fontSize: 15, lineHeight: 1.55, color: 'rgba(250,244,236,0.85)' }}>
-              Un projet à fort ancrage environnemental et local, accompagné dans la mesure de son impact parfaitement
-              aligné avec vos priorités.
+              Un projet à fort ancrage environnemental et local, accompagné dans la mesure de son impact parfaitement aligné avec vos priorités.
             </p>
           </div>
         </div>
@@ -364,13 +437,15 @@ function WhatMakesUsUnique() {
             Une innovation inspirée du monde de l'investissement.
           </h2>
           <p style={{ fontSize: 'clamp(16px,1.9vw,18px)', lineHeight: 1.6, marginTop: 20, color: 'rgba(250,244,236,0.72)' }}>
-            Les investisseurs mutualisent leurs ressources pour financer des entreprises prometteuses. Pourquoi les
-            entreprises engagées ne feraient-elles pas de même pour soutenir les associations les plus impactantes&nbsp;?
+            Les investisseurs mutualisent leurs ressources pour financer des entreprises prometteuses. Pourquoi les entreprises engagées ne feraient-elles pas
+            de même pour soutenir les associations les plus impactantes&nbsp;?
           </p>
         </div>
         <div className="uniqgrid" style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 20, marginTop: 44 }}>
           <div style={{ background: 'rgba(250,244,236,0.06)', border: '1px solid rgba(250,244,236,0.14)', borderRadius: 24, padding: 30 }}>
-            <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(250,244,236,0.5)', marginBottom: 12 }}>
+            <div
+              style={{ fontSize: 13, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(250,244,236,0.5)', marginBottom: 12 }}
+            >
               Mécénat classique
             </div>
             <div style={{ fontFamily: "'Bricolage Grotesque'", fontWeight: 700, fontSize: 24, lineHeight: 1.2, color: 'rgba(250,244,236,0.85)' }}>
@@ -378,12 +453,14 @@ function WhatMakesUsUnique() {
             </div>
           </div>
           <div style={{ background: '#FF5A36', borderRadius: 24, padding: 30 }}>
-            <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(255,253,249,0.8)', marginBottom: 12 }}>
+            <div
+              style={{ fontSize: 13, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(255,253,249,0.8)', marginBottom: 12 }}
+            >
               Chez AlliancEssor
             </div>
             <div style={{ fontFamily: "'Bricolage Grotesque'", fontWeight: 700, fontSize: 24, lineHeight: 1.2, color: '#FFFDF9' }}>
-              « À partir de vos référentiels RSE, recevez un portefeuille de projets priorisés et mutualisez leur
-              financement avec d'autres entreprises alignées. »
+              « À partir de vos référentiels RSE, recevez un portefeuille de projets priorisés et mutualisez leur financement avec d'autres entreprises
+              alignées. »
             </div>
           </div>
         </div>
@@ -413,10 +490,17 @@ function BeforeAfter() {
     <section style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)', background: '#F3EBE0' }}>
       <div style={{ maxWidth: 1100, margin: '0 auto' }}>
         <div style={{ textAlign: 'center' }}>
-          <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#E8431F' }}>
-            Voyez la différence
-          </span>
-          <h2 style={{ fontFamily: "'Bricolage Grotesque'", fontWeight: 700, fontSize: 'clamp(28px,4.2vw,46px)', lineHeight: 1.03, letterSpacing: '-0.02em', margin: '16px 0 0' }}>
+          <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#E8431F' }}>Voyez la différence</span>
+          <h2
+            style={{
+              fontFamily: "'Bricolage Grotesque'",
+              fontWeight: 700,
+              fontSize: 'clamp(28px,4.2vw,46px)',
+              lineHeight: 1.03,
+              letterSpacing: '-0.02em',
+              margin: '16px 0 0',
+            }}
+          >
             Avant / Après AlliancEssor
           </h2>
         </div>
@@ -456,7 +540,18 @@ function BeforeAfter() {
 function Cta() {
   return (
     <section id="rdv" style={{ padding: 'clamp(50px,7vw,110px) clamp(20px,5vw,64px)' }}>
-      <div style={{ maxWidth: 1000, margin: '0 auto', background: '#FF5A36', borderRadius: 36, padding: 'clamp(40px,6vw,72px)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+      <div
+        style={{
+          maxWidth: 1000,
+          margin: '0 auto',
+          background: '#FF5A36',
+          borderRadius: 36,
+          padding: 'clamp(40px,6vw,72px)',
+          textAlign: 'center',
+          position: 'relative',
+          overflow: 'hidden',
+        }}
+      >
         <div style={{ position: 'absolute', bottom: -90, left: -60, width: 280, height: 280, background: 'rgba(255,194,75,0.5)', borderRadius: '50%' }} />
         <div style={{ position: 'absolute', top: -70, right: -40, width: 200, height: 200, background: 'rgba(91,61,245,0.35)', borderRadius: '50%' }} />
         <div style={{ position: 'relative', zIndex: 1, color: '#FFFDF9' }}>
@@ -482,9 +577,21 @@ function Cta() {
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 14, marginTop: 32 }}>
             <a
-              href="/rendez-vous/"
+              href="https://zcal.co/alliancessor/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-lift"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: 9, background: '#1B1830', color: '#FAF4EC', fontWeight: 700, fontSize: 16, padding: '16px 32px', borderRadius: 100 }}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 9,
+                background: '#1B1830',
+                color: '#FAF4EC',
+                fontWeight: 700,
+                fontSize: 16,
+                padding: '16px 32px',
+                borderRadius: 100,
+              }}
             >
               Prendre rendez-vous →
             </a>

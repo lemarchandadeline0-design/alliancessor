@@ -45,10 +45,7 @@ function Nav() {
       <a href="#top">
         <Logo />
       </a>
-      <div
-        className="navlinks"
-        style={{ display: 'none', alignItems: 'center', gap: 30, fontSize: 15, fontWeight: 500 }}
-      >
+      <div className="navlinks" style={{ display: 'none', alignItems: 'center', gap: 30, fontSize: 15, fontWeight: 500 }}>
         <a href="#moteur" style={{ color: '#1B1830' }}>
           Le moteur de décision
         </a>
@@ -63,7 +60,9 @@ function Nav() {
         </a>
       </div>
       <a
-        href="/rendez-vous/"
+        href="https://zcal.co/alliancessor/30min"
+        target="_blank"
+        rel="noopener noreferrer"
         className="btn-lift"
         style={{
           display: 'inline-flex',
@@ -86,10 +85,7 @@ function Nav() {
 /* ============ HERO ============ */
 function Hero({ showBlobs }: { showBlobs: boolean }) {
   return (
-    <header
-      id="top"
-      style={{ position: 'relative', padding: 'clamp(40px,7vw,90px) clamp(20px,5vw,64px) clamp(60px,7vw,100px)' }}
-    >
+    <header id="top" style={{ position: 'relative', padding: 'clamp(40px,7vw,90px) clamp(20px,5vw,64px) clamp(60px,7vw,100px)' }}>
       {showBlobs && (
         <div aria-hidden="true" style={{ position: 'absolute', inset: 0, overflow: 'hidden', pointerEvents: 'none', zIndex: 0 }}>
           <div
@@ -204,15 +200,16 @@ function Hero({ showBlobs }: { showBlobs: boolean }) {
               Transformez vos engagements RSE en décisions de mécénat à impact.
             </p>
             <p style={{ fontSize: 'clamp(16px,1.9vw,18px)', lineHeight: 1.6, maxWidth: 560, marginTop: 12, color: 'rgba(27,24,48,0.72)' }}>
-              À partir de vos référentiels RSE, AlliancEssor identifie les projets associatifs les plus alignés avec vos
-              priorités, mutualise leur financement avec d'autres entreprises engagées et accompagne la mesure de leur
-              impact.
+              À partir de vos référentiels RSE, AlliancEssor identifie les projets associatifs les plus alignés avec vos priorités, mutualise leur financement
+              avec d'autres entreprises engagées et accompagne la mesure de leur impact.
             </p>
           </div>
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14, marginTop: 34 }}>
             <a
-              href="/rendez-vous/"
+              href="https://zcal.co/alliancessor/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-lift"
               style={{
                 display: 'inline-flex',
@@ -271,11 +268,7 @@ function Hero({ showBlobs }: { showBlobs: boolean }) {
                 <span style={{ fontSize: 11.5, fontWeight: 600, color: 'rgba(27,24,48,0.4)' }}>EcoVadis · B Corp · ISO · CSRD</span>
               </div>
               <div style={{ position: 'relative', height: 120, borderRadius: 16, overflow: 'hidden' }}>
-                <img
-                  src="/images/team-office-1.webp"
-                  alt="Photo équipe entreprise"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                />
+                <img src="/images/team-office-1.webp" alt="Photo équipe entreprise" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
             </div>
 
@@ -359,11 +352,7 @@ function Hero({ showBlobs }: { showBlobs: boolean }) {
                 <span style={{ fontSize: 11.5, fontWeight: 600, color: 'rgba(27,24,48,0.4)' }}>Impact mesuré</span>
               </div>
               <div style={{ position: 'relative', height: 120, borderRadius: 16, overflow: 'hidden' }}>
-                <img
-                  src="/images/team-association.webp"
-                  alt="Photo action associative"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                />
+                <img src="/images/team-association.webp" alt="Photo action associative" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
             </div>
           </div>
@@ -407,10 +396,7 @@ function StatCell({ num, txt, color }: { num: string; txt: string; color: string
 /* ============ POURQUOI ============ */
 function PourquoiSection() {
   return (
-    <section
-      id="pourquoi"
-      style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)', background: '#1B1830', color: '#FAF4EC' }}
-    >
+    <section id="pourquoi" style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)', background: '#1B1830', color: '#FAF4EC' }}>
       <div style={{ maxWidth: 1000, margin: '0 auto', textAlign: 'center' }}>
         <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FFC24B' }}>
           Pourquoi repenser le mécénat
@@ -437,9 +423,8 @@ function PourquoiSection() {
             color: 'rgba(250,244,236,0.72)',
           }}
         >
-          Normes, labels et certifications : votre entreprise dispose d'un patrimoine de données considérable.
-          Aujourd'hui, il sert à rendre compte de vos engagements. Il peut désormais orienter chacune de vos décisions
-          de mécénat.
+          Normes, labels et certifications : votre entreprise dispose d'un patrimoine de données considérable. Aujourd'hui, il sert à rendre compte de vos
+          engagements. Il peut désormais orienter chacune de vos décisions de mécénat.
         </p>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 12, marginTop: 34 }}>
           <Pill>EcoVadis</Pill>
@@ -497,11 +482,46 @@ interface FlowStepData {
 }
 
 const FLOW_STEPS: FlowStepData[] = [
-  { num: '01', title: 'Référentiel', text: 'Nous partons de vos référentiels, notations et politiques RSE existants.', borderColor: '#FF5A36', textColor: '#FF5A36', shadow: 'rgba(255,90,54,0.55)' },
-  { num: '02', title: 'Analyse', text: 'Notre moteur identifie vos axes prioritaires et vos critères de décision.', borderColor: '#FF5A36', textColor: '#FF5A36', shadow: 'rgba(255,90,54,0.55)' },
-  { num: '03', title: 'Priorisation', text: 'Chaque opportunité est notée selon son alignement avec votre stratégie RSE.', borderColor: '#E8431F', textColor: '#E8431F', shadow: 'rgba(232,67,31,0.5)' },
-  { num: '04', title: 'Sélection', text: "Vous recevez un portefeuille de projets associatifs cohérents et renforcés sur leur démarche RSE.", borderColor: '#5B3DF5', textColor: '#5B3DF5', shadow: 'rgba(91,61,245,0.5)' },
-  { num: '05', title: 'Financement', text: "Vous mutualisez le financement avec d'autres entreprises engagées, en gardant votre autonomie.", borderColor: '#5B3DF5', textColor: '#5B3DF5', shadow: 'rgba(91,61,245,0.5)' },
+  {
+    num: '01',
+    title: 'Référentiel',
+    text: 'Nous partons de vos référentiels, notations et politiques RSE existants.',
+    borderColor: '#FF5A36',
+    textColor: '#FF5A36',
+    shadow: 'rgba(255,90,54,0.55)',
+  },
+  {
+    num: '02',
+    title: 'Analyse',
+    text: 'Notre moteur identifie vos axes prioritaires et vos critères de décision.',
+    borderColor: '#FF5A36',
+    textColor: '#FF5A36',
+    shadow: 'rgba(255,90,54,0.55)',
+  },
+  {
+    num: '03',
+    title: 'Priorisation',
+    text: 'Chaque opportunité est notée selon son alignement avec votre stratégie RSE.',
+    borderColor: '#E8431F',
+    textColor: '#E8431F',
+    shadow: 'rgba(232,67,31,0.5)',
+  },
+  {
+    num: '04',
+    title: 'Sélection',
+    text: 'Vous recevez un portefeuille de projets associatifs cohérents et renforcés sur leur démarche RSE.',
+    borderColor: '#5B3DF5',
+    textColor: '#5B3DF5',
+    shadow: 'rgba(91,61,245,0.5)',
+  },
+  {
+    num: '05',
+    title: 'Financement',
+    text: "Vous mutualisez le financement avec d'autres entreprises engagées, en gardant votre autonomie.",
+    borderColor: '#5B3DF5',
+    textColor: '#5B3DF5',
+    shadow: 'rgba(91,61,245,0.5)',
+  },
   { num: '06', title: 'Mesure', text: "Vous suivez l'impact obtenu via leurs indicateurs d'impact (KPIs).", dark: true },
 ];
 
@@ -527,8 +547,8 @@ function MoteurSection() {
             Vos référentiels RSE deviennent des recommandations.
           </h2>
           <p style={{ fontSize: 'clamp(16px,1.9vw,19px)', lineHeight: 1.6, marginTop: 22, color: 'rgba(27,24,48,0.72)', maxWidth: 640 }}>
-            AlliancEssor analyse vos données d'engagement et les traduit en un portefeuille de projets priorisé, aligné
-            avec votre stratégie. Le mécénat n'est plus une intuition, c'est une décision documentée.
+            AlliancEssor analyse vos données d'engagement et les traduit en un portefeuille de projets priorisé, aligné avec votre stratégie. Le mécénat n'est
+            plus une intuition, c'est une décision documentée.
           </p>
         </div>
 
@@ -611,8 +631,8 @@ function PortefeuilleSection() {
             Non pas un projet. Un portefeuille priorisé.
           </h2>
           <p style={{ fontSize: 'clamp(16px,1.8vw,18px)', lineHeight: 1.6, marginTop: 20, color: 'rgba(27,24,48,0.72)' }}>
-            AlliancEssor ne vous présente pas une association à soutenir. Il vous présente une allocation&nbsp;: plusieurs
-            projets, classés par compatibilité avec votre stratégie RSE. À vous de décider où va votre impact.
+            AlliancEssor ne vous présente pas une association à soutenir. Il vous présente une allocation&nbsp;: plusieurs projets, classés par compatibilité
+            avec votre stratégie RSE. À vous de décider où va votre impact.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginTop: 28 }}>
             <Bullet bg="#FFE1D4" color="#E8431F">
@@ -665,7 +685,15 @@ const PORTFOLIO_ROWS = [
 
 function PortfolioCard() {
   return (
-    <div style={{ background: '#FFFDF9', border: '1px solid rgba(27,24,48,0.1)', borderRadius: 28, padding: 'clamp(22px,3vw,32px)', boxShadow: '0 40px 70px -44px rgba(27,24,48,0.4)' }}>
+    <div
+      style={{
+        background: '#FFFDF9',
+        border: '1px solid rgba(27,24,48,0.1)',
+        borderRadius: 28,
+        padding: 'clamp(22px,3vw,32px)',
+        boxShadow: '0 40px 70px -44px rgba(27,24,48,0.4)',
+      }}
+    >
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 20 }}>
         <span style={{ fontFamily: "'Bricolage Grotesque'", fontWeight: 700, fontSize: 16, letterSpacing: '-0.01em' }}>Recommandations · T2 2026</span>
         <span style={{ fontSize: 11.5, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(27,24,48,0.45)' }}>Priorisé</span>
@@ -683,10 +711,25 @@ function PortfolioCard() {
           </div>
         ))}
       </div>
-      <div style={{ marginTop: 22, paddingTop: 18, borderTop: '1px solid rgba(27,24,48,0.1)', display: 'flex', alignItems: 'center', gap: 10, fontSize: 13.5, color: 'rgba(27,24,48,0.6)' }}>
+      <div
+        style={{
+          marginTop: 22,
+          paddingTop: 18,
+          borderTop: '1px solid rgba(27,24,48,0.1)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: 10,
+          fontSize: 13.5,
+          color: 'rgba(27,24,48,0.6)',
+        }}
+      >
         <span style={{ width: 18, height: 14, position: 'relative', display: 'inline-block', flex: 'none' }}>
-          <span style={{ position: 'absolute', left: 0, top: 0, width: 14, height: 14, borderRadius: '50%', background: '#FF5A36', mixBlendMode: 'multiply' }} />
-          <span style={{ position: 'absolute', left: 4, top: 0, width: 14, height: 14, borderRadius: '50%', background: '#5B3DF5', mixBlendMode: 'multiply' }} />
+          <span
+            style={{ position: 'absolute', left: 0, top: 0, width: 14, height: 14, borderRadius: '50%', background: '#FF5A36', mixBlendMode: 'multiply' }}
+          />
+          <span
+            style={{ position: 'absolute', left: 4, top: 0, width: 14, height: 14, borderRadius: '50%', background: '#5B3DF5', mixBlendMode: 'multiply' }}
+          />
         </span>
         Compatibilité calculée à partir de vos référentiels RSE.
       </div>
@@ -703,13 +746,38 @@ const MUTUAL_CARDS = [
 
 function MutualisationSection() {
   return (
-    <section id="mutualisation" style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)', background: '#1B1830', color: '#FAF4EC', position: 'relative', overflow: 'hidden' }}>
-      <div aria-hidden="true" style={{ position: 'absolute', top: -90, left: -70, width: 320, height: 320, background: 'rgba(255,90,54,0.16)', borderRadius: '50%', filter: 'blur(30px)' }} />
-      <div aria-hidden="true" style={{ position: 'absolute', bottom: -110, right: -60, width: 300, height: 300, background: 'rgba(91,61,245,0.2)', borderRadius: '50%', filter: 'blur(30px)' }} />
+    <section
+      id="mutualisation"
+      style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)', background: '#1B1830', color: '#FAF4EC', position: 'relative', overflow: 'hidden' }}
+    >
+      <div
+        aria-hidden="true"
+        style={{
+          position: 'absolute',
+          top: -90,
+          left: -70,
+          width: 320,
+          height: 320,
+          background: 'rgba(255,90,54,0.16)',
+          borderRadius: '50%',
+          filter: 'blur(30px)',
+        }}
+      />
+      <div
+        aria-hidden="true"
+        style={{
+          position: 'absolute',
+          bottom: -110,
+          right: -60,
+          width: 300,
+          height: 300,
+          background: 'rgba(91,61,245,0.2)',
+          borderRadius: '50%',
+          filter: 'blur(30px)',
+        }}
+      />
       <div style={{ position: 'relative', zIndex: 1, maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
-        <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FFC24B' }}>
-          Mutualisation
-        </span>
+        <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FFC24B' }}>Mutualisation</span>
         <h2
           style={{
             fontFamily: "'Bricolage Grotesque'",
@@ -726,9 +794,8 @@ function MutualisationSection() {
           <span style={{ color: '#FF7A5C' }}>À plusieurs, vous en changez l'échelle.</span>
         </h2>
         <p style={{ fontSize: 'clamp(16px,1.9vw,19px)', lineHeight: 1.6, maxWidth: 680, margin: '24px auto 0', color: 'rgba(250,244,236,0.72)' }}>
-          La mutualisation n'est pas une fonctionnalité&nbsp;: c'est notre innovation. Plusieurs entreprises, chacune
-          autonome dans sa décision, financent ensemble un même projet lorsqu'il sert la stratégie de chacune. Vous
-          gardez la main&nbsp;: le projet gagne en ambition.
+          La mutualisation n'est pas une fonctionnalité&nbsp;: c'est notre innovation. Plusieurs entreprises, chacune autonome dans sa décision, financent
+          ensemble un même projet lorsqu'il sert la stratégie de chacune. Vous gardez la main&nbsp;: le projet gagne en ambition.
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))', gap: 18, marginTop: 44, textAlign: 'left' }}>
           {MUTUAL_CARDS.map((card) => (
@@ -774,13 +841,17 @@ function CycleSection() {
             Le mécénat devient un cycle, pas un événement.
           </h2>
           <p style={{ fontSize: 'clamp(16px,1.9vw,19px)', lineHeight: 1.6, marginTop: 22, color: 'rgba(27,24,48,0.72)', maxWidth: 640 }}>
-            Chaque décision nourrit la suivante. La mesure d'impact devient la matière première de vos prochains
-            arbitrages, votre stratégie de mécénat s'améliore à chaque tour.
+            Chaque décision nourrit la suivante. La mesure d'impact devient la matière première de vos prochains arbitrages, votre stratégie de mécénat
+            s'améliore à chaque tour.
           </p>
         </div>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 44, alignItems: 'stretch' }}>
           {CYCLE_STEPS.map((step) => (
-            <div key={step.num} className="cyclecard" style={{ flex: 1, minWidth: 150, background: '#FFFDF9', border: '1px solid rgba(27,24,48,0.1)', borderRadius: 20, padding: '24px 22px' }}>
+            <div
+              key={step.num}
+              className="cyclecard"
+              style={{ flex: 1, minWidth: 150, background: '#FFFDF9', border: '1px solid rgba(27,24,48,0.1)', borderRadius: 20, padding: '24px 22px' }}
+            >
               <div style={{ fontFamily: "'Bricolage Grotesque'", fontWeight: 800, fontSize: 14, color: step.color }}>{step.num}</div>
               <div style={{ fontFamily: "'Bricolage Grotesque'", fontWeight: 700, fontSize: 19, marginTop: 8 }}>{step.title}</div>
               <p style={{ fontSize: 13.5, lineHeight: 1.5, color: 'rgba(27,24,48,0.65)', marginTop: 6 }}>{step.text}</p>
@@ -794,7 +865,10 @@ function CycleSection() {
 
 /* ============ BENEFITS ============ */
 const BENEFITS = [
-  { title: 'Des décisions défendables', text: "Chaque euro alloué s'appuie sur vos référentiels RSE. Vos choix se justifient en interne comme auprès de vos parties prenantes." },
+  {
+    title: 'Des décisions défendables',
+    text: "Chaque euro alloué s'appuie sur vos référentiels RSE. Vos choix se justifient en interne comme auprès de vos parties prenantes.",
+  },
   { title: 'Une capacité démultipliée', text: 'La mutualisation vous donne accès à des projets plus ambitieux, sans augmenter votre effort de financement.' },
   { title: 'Un impact mesuré', text: "Indicateurs de suivi et rapports d'impact, avec les avantages fiscaux associés au mécénat." },
 ];
@@ -869,9 +943,7 @@ function EntreprisesSection() {
           </div>
         </div>
         <div>
-          <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#E8431F' }}>
-            Pour les entreprises
-          </span>
+          <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#E8431F' }}>Pour les entreprises</span>
           <h2
             style={{
               fontFamily: "'Bricolage Grotesque'",
@@ -886,9 +958,8 @@ function EntreprisesSection() {
             le 1er moteur de décision pour votre mécénat.
           </h2>
           <p style={{ fontSize: 'clamp(16px,1.8vw,18px)', lineHeight: 1.6, marginTop: 20, color: 'rgba(27,24,48,0.72)' }}>
-            À partir de votre score de compatibilité RSE, AlliancEssor priorise les projets associatifs les plus alignés
-            avec votre stratégie, mutualise leur financement avec d'autres entreprises engagées et vous donne les
-            moyens d'en mesurer l'impact.
+            À partir de votre score de compatibilité RSE, AlliancEssor priorise les projets associatifs les plus alignés avec votre stratégie, mutualise leur
+            financement avec d'autres entreprises engagées et vous donne les moyens d'en mesurer l'impact.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginTop: 28 }}>
             <Bullet bg="#FFE1D4" color="#E8431F">
@@ -898,8 +969,7 @@ function EntreprisesSection() {
               <strong>Mutualiser le financement</strong> avec d'autres entreprises pour changer d'échelle.
             </Bullet>
             <Bullet bg="#FFE1D4" color="#E8431F">
-              <strong>Valoriser la démarche</strong> auprès de vos collaborateurs, clients et partenaires avec les
-              avantages fiscaux associés.
+              <strong>Valoriser la démarche</strong> auprès de vos collaborateurs, clients et partenaires avec les avantages fiscaux associés.
             </Bullet>
           </div>
           <a
@@ -936,8 +1006,22 @@ const TRUST_CARDS = [
 
 function ConfianceSection() {
   return (
-    <section id="confiance" style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)', background: '#1B1830', color: '#FAF4EC', position: 'relative', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', top: -100, right: -80, width: 340, height: 340, background: 'rgba(255,90,54,0.16)', borderRadius: '50%', filter: 'blur(30px)' }} />
+    <section
+      id="confiance"
+      style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)', background: '#1B1830', color: '#FAF4EC', position: 'relative', overflow: 'hidden' }}
+    >
+      <div
+        style={{
+          position: 'absolute',
+          top: -100,
+          right: -80,
+          width: 340,
+          height: 340,
+          background: 'rgba(255,90,54,0.16)',
+          borderRadius: '50%',
+          filter: 'blur(30px)',
+        }}
+      />
       <div style={{ position: 'relative', zIndex: 1, maxWidth: 1000, margin: '0 auto', textAlign: 'center' }}>
         <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FFC24B' }}>Pourquoi avoir confiance</span>
         <h2
@@ -954,13 +1038,22 @@ function ConfianceSection() {
           Une technologie d'aide à la décision, <span style={{ color: '#FF7A5C' }}>pas une simple intermédiation.</span>
         </h2>
         <p style={{ fontSize: 'clamp(16px,1.9vw,19px)', lineHeight: 1.6, maxWidth: 700, margin: '24px auto 0', color: 'rgba(250,244,236,0.72)' }}>
-          AlliancEssor s'appuie sur des référentiels reconnus et une méthode transparente. Vous gardez la main sur
-          chaque décision, nous fournissons l'analyse et la priorisation. Après le financement, nous assurons
-          également le suivi et la mesure de l'impact afin de transformer vos engagements en résultats concrets et
-          mesurables.
+          AlliancEssor s'appuie sur des référentiels reconnus et une méthode transparente. Vous gardez la main sur chaque décision, nous fournissons l'analyse
+          et la priorisation. Après le financement, nous assurons également le suivi et la mesure de l'impact afin de transformer vos engagements en résultats
+          concrets et mesurables.
         </p>
       </div>
-      <div style={{ position: 'relative', zIndex: 1, maxWidth: 1000, margin: '44px auto 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 18 }}>
+      <div
+        style={{
+          position: 'relative',
+          zIndex: 1,
+          maxWidth: 1000,
+          margin: '44px auto 0',
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))',
+          gap: 18,
+        }}
+      >
         {TRUST_CARDS.map((card) => (
           <div key={card.title} style={{ background: 'rgba(250,244,236,0.06)', border: '1px solid rgba(250,244,236,0.14)', borderRadius: 22, padding: 28 }}>
             <div style={{ width: 34, height: 34, borderRadius: 10, background: card.color, marginBottom: 16 }} />
@@ -977,7 +1070,18 @@ function ConfianceSection() {
 function FinalCta() {
   return (
     <section id="rdv" style={{ padding: 'clamp(60px,8vw,120px) clamp(20px,5vw,64px)' }}>
-      <div style={{ maxWidth: 1000, margin: '0 auto', background: '#FF5A36', borderRadius: 36, padding: 'clamp(40px,6vw,72px)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+      <div
+        style={{
+          maxWidth: 1000,
+          margin: '0 auto',
+          background: '#FF5A36',
+          borderRadius: 36,
+          padding: 'clamp(40px,6vw,72px)',
+          textAlign: 'center',
+          position: 'relative',
+          overflow: 'hidden',
+        }}
+      >
         <div style={{ position: 'absolute', bottom: -90, left: -60, width: 280, height: 280, background: 'rgba(255,194,75,0.5)', borderRadius: '50%' }} />
         <div style={{ position: 'absolute', top: -70, right: -40, width: 200, height: 200, background: 'rgba(91,61,245,0.35)', borderRadius: '50%' }} />
         <div style={{ position: 'relative', zIndex: 1, color: '#FFFDF9' }}>
@@ -999,19 +1103,32 @@ function FinalCta() {
             Ne financez plus seul. Financez mieux, ensemble.
           </h2>
           <p style={{ fontSize: 'clamp(16px,1.9vw,19px)', lineHeight: 1.55, maxWidth: 560, margin: '22px auto 0', color: 'rgba(255,253,249,0.9)' }}>
-            Prenons 30 minutes pour analyser vos référentiels RSE et construire votre premier portefeuille de projets
-            priorisé.
+            Prenons 30 minutes pour analyser vos référentiels RSE et construire votre premier portefeuille de projets priorisé.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 14, marginTop: 34 }}>
             <a
-              href="/rendez-vous/"
+              href="https://zcal.co/alliancessor/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-lift"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: 9, background: '#1B1830', color: '#FAF4EC', fontWeight: 700, fontSize: 16, padding: '16px 32px', borderRadius: 100 }}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 9,
+                background: '#1B1830',
+                color: '#FAF4EC',
+                fontWeight: 700,
+                fontSize: 16,
+                padding: '16px 32px',
+                borderRadius: 100,
+              }}
             >
               Prendre rendez-vous →
             </a>
             <a
-              href="/rendez-vous/"
+              href="https://zcal.co/alliancessor/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -1052,7 +1169,7 @@ function Footer() {
               { label: 'Accueil', href: '#top' },
               { label: 'Qui sommes-nous', href: '#confiance' },
               { label: 'Le moteur de décision', href: '#moteur' },
-              { label: 'Contact', href: '/rendez-vous/' },
+              { label: 'Contact', href: 'https://zcal.co/alliancessor/30min' },
             ]}
           />
           <FooterColumn
@@ -1060,12 +1177,21 @@ function Footer() {
             links={[
               { label: 'Espace entreprises', href: '/entreprises/' },
               { label: 'Espace association', href: '/associations/' },
-              { label: 'Devenir partenaire', href: '/rendez-vous/' },
+              { label: 'Devenir partenaire', href: 'https://zcal.co/alliancessor/30min' },
             ]}
           />
         </div>
       </div>
-      <div style={{ maxWidth: 1240, margin: '36px auto 0', paddingTop: 22, borderTop: '1px solid rgba(250,244,236,0.14)', fontSize: 13, color: 'rgba(250,244,236,0.5)' }}>
+      <div
+        style={{
+          maxWidth: 1240,
+          margin: '36px auto 0',
+          paddingTop: 22,
+          borderTop: '1px solid rgba(250,244,236,0.14)',
+          fontSize: 13,
+          color: 'rgba(250,244,236,0.5)',
+        }}
+      >
         © AlliancEssor — 2026 · Ne financez plus seul. Financez mieux, ensemble.
       </div>
     </footer>
@@ -1080,7 +1206,13 @@ function FooterColumn({ title, links }: { title: string; links: { label: string;
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 9, fontSize: 14.5 }}>
         {links.map((link) => (
-          <a key={link.label} href={link.href} style={{ color: 'rgba(250,244,236,0.85)' }}>
+          <a
+            key={link.label}
+            href={link.href}
+            target={link.href.startsWith('http') ? '_blank' : undefined}
+            rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+            style={{ color: 'rgba(250,244,236,0.85)' }}
+          >
             {link.label}
           </a>
         ))}

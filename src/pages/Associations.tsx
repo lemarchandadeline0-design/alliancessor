@@ -74,13 +74,14 @@ function Hero() {
               Votre cause inspire. Donnons-lui des <span style={{ color: '#5B3DF5' }}>moyens durables.</span>
             </h1>
             <p style={{ fontSize: 'clamp(17px,2vw,20px)', lineHeight: 1.55, maxWidth: 540, marginTop: 22, color: 'rgba(27,24,48,0.75)' }}>
-              Ensemble, renforçons la dimension RSE de votre projet, alignons-le avec les entreprises les plus
-              pertinentes et construisons un financement collectif durable. Vous vous concentrez sur votre mission,
-              nous sur les financements.
+              Ensemble, renforçons la dimension RSE de votre projet, alignons-le avec les entreprises les plus pertinentes et construisons un financement
+              collectif durable. Vous vous concentrez sur votre mission, nous sur les financements.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14, marginTop: 30 }}>
               <a
-                href="/rendez-vous/"
+                href="https://zcal.co/alliancessor/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-lift"
                 style={{
                   display: 'inline-flex',
@@ -139,9 +140,7 @@ function Mission() {
   return (
     <section style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)', background: '#FFFDF9' }}>
       <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
-        <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#5B3DF5' }}>
-          Notre mission
-        </span>
+        <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#5B3DF5' }}>Notre mission</span>
         <h2
           style={{
             fontFamily: "'Bricolage Grotesque'",
@@ -156,10 +155,9 @@ function Mission() {
           Valoriser votre impact en créant des ponts solides avec des partenaires engagés.
         </h2>
         <p style={{ fontSize: 'clamp(16px,1.9vw,19px)', lineHeight: 1.6, maxWidth: 680, margin: '24px auto 0', color: 'rgba(27,24,48,0.7)' }}>
-          Les organisations à but non lucratif transforment la société. Mais trop souvent, leur croissance est freinée
-          par le manque de financements. AlliancEssor rend votre projet lisible pour les entreprises dont les
-          référentiels RSE recommandent de le soutenir et structure leur financement collectif, de manière
-          stratégique et durable.
+          Les organisations à but non lucratif transforment la société. Mais trop souvent, leur croissance est freinée par le manque de financements.
+          AlliancEssor rend votre projet lisible pour les entreprises dont les référentiels RSE recommandent de le soutenir et structure leur financement
+          collectif, de manière stratégique et durable.
         </p>
       </div>
     </section>
@@ -177,9 +175,7 @@ function ThreeApproaches() {
     <section style={{ padding: 'clamp(50px,7vw,90px) clamp(20px,5vw,64px)', background: '#1B1830', color: '#FAF4EC' }}>
       <div style={{ maxWidth: 1240, margin: '0 auto' }}>
         <div style={{ maxWidth: 680 }}>
-          <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FFC24B' }}>
-            Notre concept
-          </span>
+          <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#FFC24B' }}>Notre concept</span>
           <h2
             style={{
               fontFamily: "'Bricolage Grotesque'",
@@ -213,7 +209,16 @@ function MutualizedService() {
     <section id="service" style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)' }}>
       <div className="servgrid" style={{ maxWidth: 1240, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr', gap: 48, alignItems: 'center' }}>
         <div style={{ position: 'relative' }}>
-          <div style={{ position: 'relative', borderRadius: 28, overflow: 'hidden', aspectRatio: '4/3', boxShadow: '0 40px 70px -40px rgba(91,61,245,0.5)', border: '6px solid #FFFDF9' }}>
+          <div
+            style={{
+              position: 'relative',
+              borderRadius: 28,
+              overflow: 'hidden',
+              aspectRatio: '4/3',
+              boxShadow: '0 40px 70px -40px rgba(91,61,245,0.5)',
+              border: '6px solid #FFFDF9',
+            }}
+          >
             <img src="/images/team-office-2.jpg" alt="Photo équipe / accompagnement" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
           <div
@@ -286,7 +291,11 @@ function MutualizedService() {
 }
 
 const ACTIONS = [
-  { bg: '#E7E0FF', title: "Réduire l'impact environnemental", text: 'Conseils pratiques pour réduire l\'empreinte de vos activités, tout en renforçant votre projet.' },
+  {
+    bg: '#E7E0FF',
+    title: "Réduire l'impact environnemental",
+    text: "Conseils pratiques pour réduire l'empreinte de vos activités, tout en renforçant votre projet.",
+  },
   { bg: '#FFE1D4', title: 'Rapprochement aligné', text: 'Un rapprochement avec les entreprises dont la stratégie RSE recommande de soutenir votre projet.' },
   { bg: '#FFF0CE', title: 'Partenariats durables', text: 'Création de collaborations qui allient financement et engagement sociétal.' },
 ];
@@ -296,9 +305,7 @@ function ConcreteActions() {
     <section style={{ padding: 'clamp(50px,7vw,90px) clamp(20px,5vw,64px)', background: '#FFFDF9' }}>
       <div style={{ maxWidth: 1240, margin: '0 auto' }}>
         <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto' }}>
-          <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#5B3DF5' }}>
-            Nos actions concrètes
-          </span>
+          <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#5B3DF5' }}>Nos actions concrètes</span>
           <h2
             style={{
               fontFamily: "'Bricolage Grotesque'",
@@ -332,9 +339,7 @@ function WhyUs() {
     <section style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)', background: '#F3EBE0' }}>
       <div style={{ maxWidth: 1000, margin: '0 auto' }}>
         <div style={{ textAlign: 'center', maxWidth: 700, margin: '0 auto' }}>
-          <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#E8431F' }}>
-            Pourquoi nous ?
-          </span>
+          <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#E8431F' }}>Pourquoi nous ?</span>
           <h2
             style={{
               fontFamily: "'Bricolage Grotesque'",
@@ -349,14 +354,16 @@ function WhyUs() {
             Plus qu'un service, un engagement commun.
           </h2>
           <p style={{ fontSize: 'clamp(16px,1.9vw,18px)', lineHeight: 1.6, marginTop: 20, color: 'rgba(27,24,48,0.7)' }}>
-            Nous ne sommes pas une simple équipe de commerciaux externalisés, mais des acteurs conscients des enjeux de
-            demain dédiés à connecter ceux qui veulent agir avec ceux qui agissent déjà.
+            Nous ne sommes pas une simple équipe de commerciaux externalisés, mais des acteurs conscients des enjeux de demain dédiés à connecter ceux qui
+            veulent agir avec ceux qui agissent déjà.
           </p>
         </div>
         <div className="whygrid" style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 20, marginTop: 40 }}>
           <div style={{ background: '#5B3DF5', color: '#FAF4EC', borderRadius: 24, padding: 32 }}>
             <div style={{ fontFamily: "'Bricolage Grotesque'", fontWeight: 700, fontSize: 22, marginBottom: 10 }}>Pour les associations</div>
-            <p style={{ fontSize: 15.5, lineHeight: 1.55, color: 'rgba(250,244,236,0.85)' }}>Des partenaires fiables pour construire une croissance vertueuse.</p>
+            <p style={{ fontSize: 15.5, lineHeight: 1.55, color: 'rgba(250,244,236,0.85)' }}>
+              Des partenaires fiables pour construire une croissance vertueuse.
+            </p>
           </div>
           <div style={{ background: '#FF5A36', color: '#FFFDF9', borderRadius: 24, padding: 32 }}>
             <div style={{ fontFamily: "'Bricolage Grotesque'", fontWeight: 700, fontSize: 22, marginBottom: 10 }}>Pour les entreprises</div>
@@ -371,7 +378,18 @@ function WhyUs() {
 function Cta() {
   return (
     <section id="rdv" style={{ padding: 'clamp(50px,7vw,110px) clamp(20px,5vw,64px)' }}>
-      <div style={{ maxWidth: 1000, margin: '0 auto', background: '#5B3DF5', borderRadius: 36, padding: 'clamp(40px,6vw,72px)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+      <div
+        style={{
+          maxWidth: 1000,
+          margin: '0 auto',
+          background: '#5B3DF5',
+          borderRadius: 36,
+          padding: 'clamp(40px,6vw,72px)',
+          textAlign: 'center',
+          position: 'relative',
+          overflow: 'hidden',
+        }}
+      >
         <div style={{ position: 'absolute', bottom: -90, left: -60, width: 280, height: 280, background: 'rgba(255,194,75,0.4)', borderRadius: '50%' }} />
         <div style={{ position: 'absolute', top: -70, right: -40, width: 200, height: 200, background: 'rgba(255,90,54,0.4)', borderRadius: '50%' }} />
         <div style={{ position: 'relative', zIndex: 1, color: '#FFFDF9' }}>
@@ -397,9 +415,21 @@ function Cta() {
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 14, marginTop: 32 }}>
             <a
-              href="/rendez-vous/"
+              href="https://zcal.co/alliancessor/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-lift"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: 9, background: '#1B1830', color: '#FAF4EC', fontWeight: 700, fontSize: 16, padding: '16px 32px', borderRadius: 100 }}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 9,
+                background: '#1B1830',
+                color: '#FAF4EC',
+                fontWeight: 700,
+                fontSize: 16,
+                padding: '16px 32px',
+                borderRadius: 100,
+              }}
             >
               Prendre rendez-vous →
             </a>

@@ -28,10 +28,7 @@ export default function InnerNav({ active, ctaBg }: InnerNavProps) {
       <a href="/">
         <Logo />
       </a>
-      <div
-        className="navlinks"
-        style={{ display: 'none', alignItems: 'center', gap: 30, fontSize: 15, fontWeight: 500 }}
-      >
+      <div className="navlinks" style={{ display: 'none', alignItems: 'center', gap: 30, fontSize: 15, fontWeight: 500 }}>
         <a href="/" style={{ color: '#1B1830' }}>
           Accueil
         </a>
@@ -46,7 +43,9 @@ export default function InnerNav({ active, ctaBg }: InnerNavProps) {
         </a>
       </div>
       <a
-        href="/rendez-vous/"
+        href="https://zcal.co/alliancessor/30min"
+        target="_blank"
+        rel="noopener noreferrer"
         className="btn-lift"
         style={{
           display: 'inline-flex',
