@@ -7,16 +7,15 @@ export default function InnerFooter() {
         <div>
           <Logo blend="screen" essorColor="#FF7A5C" textColor="#FAF4EC" />
           <p style={{ fontSize: 14.5, lineHeight: 1.6, color: 'rgba(250,244,236,0.6)', marginTop: 16, maxWidth: 300 }}>
-            Le premier matching de co-mécénat durable entre entreprises &amp; associations engagées.
+            Le 1er moteur de décision pour le mécénat d'entreprise
           </p>
-          <p style={{ fontSize: 13.5, color: 'rgba(250,244,236,0.5)', marginTop: 14 }}>Alliancessor.com</p>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 28 }}>
           <FooterColumn
             title="L'agence"
             links={[
               { label: 'Accueil', href: '/' },
-              { label: 'Contact', href: '/rendez-vous/' },
+              { label: 'Qui sommes-nous', href: '/#confiance' },
             ]}
           />
           <FooterColumn

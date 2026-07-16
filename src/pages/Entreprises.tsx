@@ -60,7 +60,7 @@ function Hero() {
               }}
             >
               <span style={{ width: 8, height: 8, borderRadius: '50%', background: '#FF5A36' }} />
-              Espace entreprises
+              1er moteur de décision pour le mécénat d'entreprise
             </span>
             <h1
               style={{
@@ -73,11 +73,12 @@ function Hero() {
                 textWrap: 'balance',
               }}
             >
-              Transformez l'engagement RSE en <span style={{ color: '#E8431F' }}>impact collectif</span>.
+              Vos référentiels RSE, moteur de vos <span style={{ color: '#E8431F' }}>décisions de mécénat.</span>
             </h1>
             <p style={{ fontSize: 'clamp(17px,2vw,20px)', lineHeight: 1.55, maxWidth: 540, marginTop: 22, color: 'rgba(27,24,48,0.75)' }}>
-              Grâce à votre score RSE, identifiez les projets associatifs les plus alignés avec vos engagements et
-              financez-les collectivement avec d'autres entreprises engagées.
+              À partir de vos référentiels RSE, AlliancEssor priorise les projets associatifs les plus alignés avec
+              votre stratégie, mutualise leur financement avec d'autres entreprises engagées et accompagne la mesure
+              de leur impact.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14, marginTop: 30 }}>
               <a
@@ -150,15 +151,15 @@ function Hero() {
 }
 
 const ENABLES = [
-  { bg: '#FFE1D4', dark: false, title: 'Identifier les bons projets', text: 'Cibler les projets associatifs les plus cohérents avec vos engagements RSE.' },
+  { bg: '#FFE1D4', dark: false, title: 'Prioriser les bons projets', text: 'Recevoir un portefeuille de projets classés par alignement avec vos référentiels RSE.' },
   { bg: '#E7E0FF', dark: false, title: 'Mutualiser le financement', text: 'Réunir les capacités de financement de plusieurs entreprises engagées.' },
-  { bg: '#FFF0CE', dark: false, title: "Suivre l'impact", text: "Piloter les résultats et les indicateurs d'impact des projets soutenus." },
+  { bg: '#FFF0CE', dark: false, title: "Mesurer l'impact", text: 'Piloter les résultats et alimenter vos prochaines décisions de mécénat.' },
   { bg: '#FF5A36', dark: true, title: 'Valoriser la démarche', text: 'Rendre l\'engagement concret auprès de vos collaborateurs, clients et partenaires.' },
 ];
 
 function WhatItEnables() {
   return (
-    <section style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)' }}>
+    <section style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)', background: '#FFFDF9' }}>
       <div style={{ maxWidth: 1240, margin: '0 auto' }}>
         <div style={{ maxWidth: 680 }}>
           <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#E8431F' }}>
@@ -175,7 +176,7 @@ function WhatItEnables() {
               textWrap: 'balance',
             }}
           >
-            Grâce au scoring &amp; au matching, AlliancEssor vous permet de…
+            Grâce à notre moteur de décision, AlliancEssor vous permet de…
           </h2>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 20, marginTop: 44 }}>
@@ -201,16 +202,25 @@ function WhatItEnables() {
   );
 }
 
-const STEPS = [
-  { num: '01', color: '#FF5A36', title: 'Analyse du profil', text: "Nous analysons le profil d'engagement de votre entreprise labellisée." },
-  { num: '02', color: '#FF5A36', title: 'Matching des projets', text: 'Mise en relation avec des projets associatifs accompagnés par AlliancEssor dans la mesure de leur impact.' },
-  { num: '03', color: '#5B3DF5', title: 'Coalitions de mécènes', text: "Création de coalitions d'entreprises engagées, mécènes d'un même projet ambitieux." },
+const DIMENSIONS = [
+  { color: '#FF5A36', title: "L'alignement", text: 'Quels projets incarnent déjà vos engagements ?' },
+  { color: '#E8431F', title: 'Le progrès', text: "Quels projets vous permettent d'aller plus loin ?" },
+  { color: '#7A5CF0', title: 'La cohérence', text: 'Quels projets renforcent la cohérence entre votre stratégie, vos labels et vos actions ?' },
+  { color: '#5B3DF5', title: "L'impact", text: 'Quels projets généreront les résultats les plus mesurables ?' },
 ];
 
 function HowItWorks() {
   return (
-    <section id="methode" style={{ padding: 'clamp(50px,7vw,90px) clamp(20px,5vw,64px)', background: '#F3EBE0' }}>
-      <div style={{ maxWidth: 1240, margin: '0 auto' }}>
+    <section id="methode" style={{ padding: 'clamp(50px,7vw,90px) clamp(20px,5vw,64px)', background: '#F3EBE0', position: 'relative', overflow: 'hidden' }}>
+      <div
+        aria-hidden="true"
+        style={{ position: 'absolute', top: '50%', right: -40, transform: 'translateY(-50%)', width: 'min(420px,40vw)', height: 'min(420px,40vw)', pointerEvents: 'none', zIndex: 0 }}
+      >
+        <span style={{ position: 'absolute', left: 0, top: '12%', width: '64%', height: '64%', borderRadius: '50%', background: '#FF5A36', mixBlendMode: 'multiply', opacity: 0.16 }} />
+        <span style={{ position: 'absolute', right: 0, top: '12%', width: '64%', height: '64%', borderRadius: '50%', background: '#5B3DF5', mixBlendMode: 'multiply', opacity: 0.16 }} />
+        <span style={{ position: 'absolute', left: '18%', bottom: 0, width: '64%', height: '64%', borderRadius: '50%', background: '#FFC24B', mixBlendMode: 'multiply', opacity: 0.16 }} />
+      </div>
+      <div style={{ maxWidth: 1240, margin: '0 auto', position: 'relative', zIndex: 1 }}>
         <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#E8431F' }}>
           Comment ça fonctionne
         </span>
@@ -222,18 +232,21 @@ function HowItWorks() {
             lineHeight: 1.03,
             letterSpacing: '-0.02em',
             margin: '16px 0 0',
-            maxWidth: 720,
+            maxWidth: 760,
             textWrap: 'balance',
           }}
         >
-          Faites émerger une nouvelle génération de mécénat.
+          Une lecture en quatre dimensions, pas un simple score.
         </h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 20, marginTop: 44 }}>
-          {STEPS.map((step) => (
-            <div key={step.num} style={{ background: '#FFFDF9', border: '1px solid rgba(27,24,48,0.1)', borderRadius: 24, padding: 32 }}>
-              <div style={{ fontFamily: "'Bricolage Grotesque'", fontWeight: 800, fontSize: 38, color: step.color, letterSpacing: '-0.02em' }}>{step.num}</div>
-              <h3 style={{ fontFamily: "'Bricolage Grotesque'", fontWeight: 700, fontSize: 21, margin: '12px 0 8px' }}>{step.title}</h3>
-              <p style={{ fontSize: 15, lineHeight: 1.55, color: 'rgba(27,24,48,0.7)' }}>{step.text}</p>
+        <p style={{ fontSize: 'clamp(16px,1.9vw,19px)', lineHeight: 1.6, maxWidth: 720, margin: '20px 0 0', color: 'rgba(27,24,48,0.78)' }}>
+          Pour transformer vos référentiels RSE en décisions, notre moteur évalue chaque projet selon quatre dimensions
+          bien plus parlantes pour un décideur qu'une simple lecture de scores&nbsp;:
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 16, marginTop: 36 }}>
+          {DIMENSIONS.map((dim) => (
+            <div key={dim.title} style={{ background: '#FFFDF9', border: '1px solid rgba(27,24,48,0.1)', borderRadius: 20, padding: 26, borderLeft: `3px solid ${dim.color}` }}>
+              <h3 style={{ fontFamily: "'Bricolage Grotesque'", fontWeight: 700, fontSize: 19, margin: '0 0 8px' }}>{dim.title}</h3>
+              <p style={{ fontSize: 14.5, lineHeight: 1.5, color: 'rgba(27,24,48,0.68)' }}>{dim.text}</p>
             </div>
           ))}
         </div>
@@ -261,7 +274,7 @@ function ScoringVisual() {
               textWrap: 'balance',
             }}
           >
-            Un match fondé sur l'alignement, pas sur l'affect.
+            Une priorisation fondée sur l'alignement
           </h2>
         </div>
         <div className="matchgrid" style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 22, alignItems: 'center', marginTop: 46 }}>
@@ -301,7 +314,7 @@ function ScoringVisual() {
                 <span style={{ position: 'absolute', left: 0, top: 0, width: 14, height: 14, borderRadius: '50%', background: '#FF5A36', mixBlendMode: 'screen' }} />
                 <span style={{ position: 'absolute', right: 0, top: 0, width: 14, height: 14, borderRadius: '50%', background: '#5B3DF5', mixBlendMode: 'screen' }} />
               </span>
-              MATCH
+              ANALYSE
             </div>
             <AnimatedPercent target={53} durationMs={1300} style={{ fontFamily: "'Bricolage Grotesque'", fontWeight: 800, fontSize: 34, color: '#5B3DF5' }} />
             <div style={{ fontSize: 13, color: 'rgba(27,24,48,0.55)' }}>de compatibilité RSE</div>
@@ -358,7 +371,7 @@ function WhatMakesUsUnique() {
         <div className="uniqgrid" style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 20, marginTop: 44 }}>
           <div style={{ background: 'rgba(250,244,236,0.06)', border: '1px solid rgba(250,244,236,0.14)', borderRadius: 24, padding: 30 }}>
             <div style={{ fontSize: 13, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(250,244,236,0.5)', marginBottom: 12 }}>
-              Plateformes classiques
+              Mécénat classique
             </div>
             <div style={{ fontFamily: "'Bricolage Grotesque'", fontWeight: 700, fontSize: 24, lineHeight: 1.2, color: 'rgba(250,244,236,0.85)' }}>
               « Choisissez une association. »
@@ -369,8 +382,8 @@ function WhatMakesUsUnique() {
               Chez AlliancEssor
             </div>
             <div style={{ fontFamily: "'Bricolage Grotesque'", fontWeight: 700, fontSize: 24, lineHeight: 1.2, color: '#FFFDF9' }}>
-              « Rejoignez une coalition d'entreprises qui partagent vos valeurs et financez ensemble des projets capables
-              de changer d'échelle. »
+              « À partir de vos référentiels RSE, recevez un portefeuille de projets priorisés et mutualisez leur
+              financement avec d'autres entreprises alignées. »
             </div>
           </div>
         </div>
@@ -397,7 +410,7 @@ const AFTER = [
 
 function BeforeAfter() {
   return (
-    <section style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)' }}>
+    <section style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)', background: '#F3EBE0' }}>
       <div style={{ maxWidth: 1100, margin: '0 auto' }}>
         <div style={{ textAlign: 'center' }}>
           <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#E8431F' }}>
@@ -465,7 +478,7 @@ function Cta() {
             Chaque engagement compte. Le vôtre fait déjà la différence.
           </h2>
           <p style={{ fontSize: 'clamp(16px,1.9vw,19px)', lineHeight: 1.55, maxWidth: 540, margin: '20px auto 0', color: 'rgba(255,253,249,0.9)' }}>
-            Analysons gratuitement votre profil d'engagement et identifions vos premières coalitions.
+            Analysons vos référentiels RSE et construisons votre premier portefeuille de projets priorisé.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 14, marginTop: 32 }}>
             <a

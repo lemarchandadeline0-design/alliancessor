@@ -41,7 +41,7 @@ export default function InnerNav({ active, ctaBg }: InnerNavProps) {
         <a href="/associations/" style={{ color: assoColor, fontWeight: active === 'associations' ? 700 : 500 }}>
           Associations
         </a>
-        <a href="/#agence" style={{ color: '#1B1830' }}>
+        <a href="/#confiance" style={{ color: '#1B1830' }}>
           Qui sommes-nous
         </a>
       </div>

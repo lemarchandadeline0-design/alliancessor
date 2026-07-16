@@ -33,11 +33,6 @@ button {
   font: inherit;
 }
 
-/* ---- profile toggle ---- */
-.audience-toggle-btn {
-  transition: color 0.3s ease;
-}
-
 /* ---- CTA buttons: translateY(-2px) on hover ---- */
 .btn-lift {
   transition: transform 0.15s ease, background 0.35s ease;
@@ -46,30 +41,8 @@ button {
   transform: translateY(-2px);
 }
 
-/* ---- "Notre solution" cards ---- */
-.solcard {
-  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
-  cursor: default;
-}
-.solcard:hover {
-  background: #1b1830 !important;
-  border-color: #1b1830 !important;
-  transform: translateY(-4px);
-  box-shadow: 0 24px 48px -28px rgba(27, 24, 48, 0.55);
-}
-.solcard:hover h3 {
-  color: #faf4ec !important;
-}
-.solcard:hover p {
-  color: rgba(250, 244, 236, 0.85) !important;
-}
-.solcard:hover .solnum {
-  color: #ffc24b !important;
-}
-
-/* ---- "Pourquoi vous joindre" cards ---- */
-.whycard-ent,
-.whycard-asso {
+/* ---- "Quels bénéfices" cards ---- */
+.whycard-ent {
   transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 .whycard-ent:hover {
@@ -82,15 +55,45 @@ button {
 .whycard-ent:hover p {
   color: #fffdf9 !important;
 }
-.whycard-asso:hover {
-  background: #5b3df5 !important;
-  border-color: #5b3df5 !important;
-  transform: translateY(-4px);
-  box-shadow: 0 24px 48px -28px rgba(91, 61, 245, 0.5);
+
+/* ---- cycle cards ---- */
+.cyclecard {
+  transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
-.whycard-asso:hover h3,
-.whycard-asso:hover p {
+.cyclecard:hover {
+  background: #1b1830 !important;
+  border-color: #1b1830 !important;
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px -28px rgba(27, 24, 48, 0.55);
+}
+.cyclecard:hover > div:nth-child(2) {
   color: #faf4ec !important;
+}
+.cyclecard:hover p {
+  color: rgba(250, 244, 236, 0.72) !important;
+}
+
+/* ---- 6-step decision-engine flow ---- */
+.flowwrap .flowline {
+  display: none;
+}
+@media (min-width: 860px) {
+  .flowwrap .flowline {
+    display: block;
+  }
+  .flowgrid {
+    grid-template-columns: repeat(6, 1fr) !important;
+    gap: 16px !important;
+  }
+  .flowstep {
+    grid-template-columns: 1fr !important;
+    justify-items: center;
+    text-align: center;
+    gap: 16px !important;
+  }
+  .flowstep .flowtxt {
+    padding: 0 4px;
+  }
 }
 
 @keyframes floaty {

@@ -71,11 +71,12 @@ function Hero() {
                 textWrap: 'balance',
               }}
             >
-              Votre cause inspire. Donnons-lui des <span style={{ color: '#5B3DF5' }}>moyens durables</span>.
+              Votre cause inspire. Donnons-lui des <span style={{ color: '#5B3DF5' }}>moyens durables.</span>
             </h1>
             <p style={{ fontSize: 'clamp(17px,2vw,20px)', lineHeight: 1.55, maxWidth: 540, marginTop: 22, color: 'rgba(27,24,48,0.75)' }}>
-              Activateurs d'engagement, catalyseurs de succès et de croissance durable. Nous aidons les organisations non
-              lucratives à allier financement, impact social… et respect de la planète.
+              Ensemble, renforçons la dimension RSE de votre projet, alignons-le avec les entreprises les plus
+              pertinentes et construisons un financement collectif durable. Vous vous concentrez sur votre mission,
+              nous sur les financements.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14, marginTop: 30 }}>
               <a
@@ -136,7 +137,7 @@ function Hero() {
 
 function Mission() {
   return (
-    <section style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)' }}>
+    <section style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)', background: '#FFFDF9' }}>
       <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
         <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#5B3DF5' }}>
           Notre mission
@@ -156,8 +157,9 @@ function Mission() {
         </h2>
         <p style={{ fontSize: 'clamp(16px,1.9vw,19px)', lineHeight: 1.6, maxWidth: 680, margin: '24px auto 0', color: 'rgba(27,24,48,0.7)' }}>
           Les organisations à but non lucratif transforment la société. Mais trop souvent, leur croissance est freinée
-          par le manque de financements. Avec AlliancEssor, nous ouvrons les portes du financement privé de manière
-          stratégique, humaine et responsable.
+          par le manque de financements. AlliancEssor rend votre projet lisible pour les entreprises dont les
+          référentiels RSE recommandent de le soutenir et structure leur financement collectif, de manière
+          stratégique et durable.
         </p>
       </div>
     </section>
@@ -285,13 +287,13 @@ function MutualizedService() {
 
 const ACTIONS = [
   { bg: '#E7E0FF', title: "Réduire l'impact environnemental", text: 'Conseils pratiques pour réduire l\'empreinte de vos activités, tout en renforçant votre projet.' },
-  { bg: '#FFE1D4', title: 'Mise en relation ciblée', text: 'Avec des entreprises partageant vos valeurs, autour de soutenances de projets.' },
+  { bg: '#FFE1D4', title: 'Rapprochement aligné', text: 'Un rapprochement avec les entreprises dont la stratégie RSE recommande de soutenir votre projet.' },
   { bg: '#FFF0CE', title: 'Partenariats durables', text: 'Création de collaborations qui allient financement et engagement sociétal.' },
 ];
 
 function ConcreteActions() {
   return (
-    <section style={{ padding: 'clamp(50px,7vw,90px) clamp(20px,5vw,64px)', background: '#F3EBE0' }}>
+    <section style={{ padding: 'clamp(50px,7vw,90px) clamp(20px,5vw,64px)', background: '#FFFDF9' }}>
       <div style={{ maxWidth: 1240, margin: '0 auto' }}>
         <div style={{ textAlign: 'center', maxWidth: 680, margin: '0 auto' }}>
           <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#5B3DF5' }}>
@@ -327,7 +329,7 @@ function ConcreteActions() {
 
 function WhyUs() {
   return (
-    <section style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)' }}>
+    <section style={{ padding: 'clamp(60px,8vw,110px) clamp(20px,5vw,64px)', background: '#F3EBE0' }}>
       <div style={{ maxWidth: 1000, margin: '0 auto' }}>
         <div style={{ textAlign: 'center', maxWidth: 700, margin: '0 auto' }}>
           <span style={{ fontSize: 12.5, fontWeight: 700, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#E8431F' }}>
